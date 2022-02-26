@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tristan McGinnis Project 1: Bad Air!</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>   
+    <h1>Project 1: Bad Air!</h1>
+    <p></p>Presented by Tristan McGinnis</p>
+    <!-- Add HTML content, SVG drawing area, ... -->
+    
+    <svg id="medianaqiline"></svg>
+    <div class="dropdown">
+        <button class="dropbtn">Filter</button>
+        <div class="filter">
+            <a class="maxaqibutton">Max AQI</a>
+            <a class="medianaqibutton">Median AQI</a>
+            <a class="ninetyaqibutton">90th Percentile</a>
+        </div> 
+    </div>
+
+    <svg id="coline"></svg>
+    <div class="dropdown">
+        <button class="dropbtn">Filter</button>
+        <div class="filter">
+            <a class="cobutton">CO</a>
+            <a class="nobutton">NO2</a>
+            <a class="ozonebutton">Ozone</a>
+            <a class="sobutton">SO2</a>
+            <a class="pm2button">PM2</a>
+            <a class="pm10button">PM10</a>
+        </div> 
+    </div>
+
+    <svg id="dayline"></svg>
+    <div class="dropdown">
+        <button class="dropbtn">Filter</button>
+        <div class="filter">
+            <a class="goodbutton">Good Days</a>
+            <a class="modbutton">Moderate Days</a>
+            <a class="unsenbutton">Unhealthy for Sensitive Group Days</a>
+            <a class="unbutton">Unhealthy Days</a>
+            <a class="vunbutton">Very Unhealthy Days</a>
+            <a class="hazbutton">Hazardous Days</a>
+        </div> 
+    </div>
+    
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js"></script>
+
+
+    <div class="source">
+        Source: Data from <a href="https://www.epa.gov/outdoor-air-quality-data">United States Environemental Protection Agency</a>
+    
+    <div id="tooltip"></div>
+
+    <!-- Our JS code - INCLUDING the new files-->
+    <script src="js/main.js"></script>
+    <script src="js/line.js"></script> 
+
+
+</body>
+</html>
